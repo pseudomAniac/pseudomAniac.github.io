@@ -133,3 +133,11 @@ jQuery(document).ready(function() {
     });
 });
 
+$(document).ready(function(){
+    $("#owl-demo").owlCarousel({
+        autoplay: 3000,
+        items: 8,
+        itemsDesktop: [1199,3],
+        itemsDesktopSmall: [979,3]
+    });
+});

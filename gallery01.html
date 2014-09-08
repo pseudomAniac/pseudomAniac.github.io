@@ -5,7 +5,7 @@
     <head>
 
         <meta charset="utf-8">
-        <title>Andia - Responsive Agency Template</title>
+        <title>Gallery | T-Rocks Construction Limited</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -19,6 +19,10 @@
         <link rel="stylesheet" href="assets/css/flexslider.css">
         <link rel="stylesheet" href="assets/css/font-awesome.css">
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/lightbox.css" />
+
+        <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="assets/owl-carousel/owl.theme.css">
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
@@ -32,6 +36,31 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
+        <!-- flexslider options -->
+        <!-- Place somewhere in the <head> of your document -->
+        <link rel="stylesheet" href="flexslider.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="jquery.flexslider.js"></script>
+
+        <!-- Place in the <head>, after the three links -->
+        <script type="text/javascript" charset="utf-8">
+            $(window).load(function() {
+                $('.flexslider').flexslider();
+            });
+        </script>
+        <style type="text/css">
+            #owl-example .item {
+                float: left;
+                position: absolute;
+            }
+            #owl-example .item-fist {
+                z-index: 10;
+            }
+            #owl-example .carousel-wrapper {
+                height: 200px;
+            }
+        </style>
+    
     </head>
 
     <body>
@@ -53,8 +82,8 @@
                             <div class="nav-collapse collapse">
                                 <ul class="nav pull-right">
                                     <li><a href="index.html"><i class="icon-home"></i><br />Home</a></li>
-                                    <li class="current-page"><a href="portfolio.html"><i class="icon-comments"></i><br />Portfolio</a></li>
-                                    <li><a href="gallery.html"><i class="icon-camera"></i><br />Gallery</a></li>
+                                    <li><a href="portfolio.html"><i class="icon-comments"></i><br />Portfolio</a></li>
+                                    <li class="current-page"><a href="gallery.html"><i class="icon-camera"></i><br />Gallery</a></li>
                                     <li><a href="services.html"><i class="icon-tasks"></i><br />Services</a></li>
                                     <li><a href="about.html"><i class="icon-user"></i><br />About</a></li>
                                     <li><a href="contact.html"><i class="icon-envelope-alt"></i><br />Contact</a></li>
@@ -72,13 +101,77 @@
                 <div class="row">
                     <div class="span12">
                         <i class="icon-camera page-title-icon"></i>
-                        <h2>Portfolio /</h2>
-                        <p>Here is the work we've done so far</p>
+                        <h2>Gallery /</h2>
+                        <p>Here is our picture gallery of the works we've done so far</p>
                     </div>
                 </div>
             </div>
         </div>
-
+        <!-- Carousel Slider -->
+        <div class="slider">
+            <div class="container">
+                <div class="row">
+                    <div class="span4">
+                        <div id="owl-example" >
+                            <div class="carousel-wrapper">
+                                <div class="item" style="z-index:1000;"><a href="assets/gallery/owl1.jpg" data-lightbox="owl"><img src="assets/gallery/owl1.jpg" alt="Owl Image" /></a></div>
+                                <div class="item"><a href="assets/gallery/owl2.jpg" data-lightbox="owl"><img src="assets/gallery/owl2.jpg" alt="Owl Image" /></a></div>
+                                <div class="item"><a href="assets/gallery/owl3.jpg" data-lightbox="owl"><img src="assets/gallery/owl3.jpg" alt="Owl Image" /></a></div>
+                                <div class="item"><a href="assets/gallery/owl4.jpg" data-lightbox="owl"><img src="assets/gallery/owl4.jpg" alt="Owl Image" /></a></div>
+                                <div class="item"><a href="assets/gallery/owl5.jpg" data-lightbox="owl"><img src="assets/gallery/owl5.jpg" alt="Owl Image" /></a></div>
+                                <div class="item"><a href="assets/gallery/owl6.jpg" data-lightbox="owl"><img src="assets/gallery/owl6.jpg" alt="Owl Image" /></a></div>
+                                <div class="item"><a href="assets/gallery/owl7.jpg" data-lightbox="owl"><img src="assets/gallery/owl7.jpg" alt="Owl Image" /></a></div>
+                                <div class="item"><a href="assets/gallery/owl8.jpg" data-lightbox="owl"><img src="assets/gallery/owl8.jpg" alt="Owl Image" /></a></div>
+                            </div>
+                            <div class="navbar wrapper-bullet">
+                                <ul class="nav pull-left">
+                                    <li>alpha</li>
+                                    <li>bravo</li>
+                                    <li>charlie</li>
+                                    <li>delta</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div id="owl-example" >
+                            <div class="carousel-wrapper">
+                                <div class="item first-item"><a href="assets/gallery/owl1.jpg" data-lightbox="owl"><img src="assets/gallery/owl1.jpg" alt="Owl Image" /></a></div>
+                                <div class="item item-not-first"><a href="assets/gallery/owl2.jpg" data-lightbox="owl"><img src="assets/gallery/owl2.jpg" alt="Owl Image" /></a></div>
+                                <div class="item item-not-first"><a href="assets/gallery/owl3.jpg" data-lightbox="owl"><img src="assets/gallery/owl3.jpg" alt="Owl Image" /></a></div>
+                                <div class="item item-not-first"><a href="assets/gallery/owl4.jpg" data-lightbox="owl"><img src="assets/gallery/owl4.jpg" alt="Owl Image" /></a></div>
+                                <div class="item item-not-first"><a href="assets/gallery/owl5.jpg" data-lightbox="owl"><img src="assets/gallery/owl5.jpg" alt="Owl Image" /></a></div>
+                                <div class="item item-not-first"><a href="assets/gallery/owl6.jpg" data-lightbox="owl"><img src="assets/gallery/owl6.jpg" alt="Owl Image" /></a></div>
+                                <div class="item item-not-first"><a href="assets/gallery/owl7.jpg" data-lightbox="owl"><img src="assets/gallery/owl7.jpg" alt="Owl Image" /></a></div>
+                                <div class="item item-not-first"><a href="assets/gallery/owl8.jpg" data-lightbox="owl"><img src="assets/gallery/owl8.jpg" alt="Owl Image" /></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div id="owl-example" >
+                            <div class="carousel-wrapper">
+                                <div class="item first-item"><a href="assets/gallery/owl1.jpg" data-lightbox="owl"><img src="assets/gallery/owl1.jpg" alt="Owl Image" /></a></div>
+                                <div class="item item-not-first"><a href="assets/gallery/owl2.jpg" data-lightbox="owl"><img src="assets/gallery/owl2.jpg" alt="Owl Image" /></a></div>
+                                <div class="item item-not-first"><a href="assets/gallery/owl3.jpg" data-lightbox="owl"><img src="assets/gallery/owl3.jpg" alt="Owl Image" /></a></div>
+                                <div class="item item-not-first"><a href="assets/gallery/owl4.jpg" data-lightbox="owl"><img src="assets/gallery/owl4.jpg" alt="Owl Image" /></a></div>
+                                <div class="item item-not-first"><a href="assets/gallery/owl5.jpg" data-lightbox="owl"><img src="assets/gallery/owl5.jpg" alt="Owl Image" /></a></div>
+                                <div class="item item-not-first"><a href="assets/gallery/owl6.jpg" data-lightbox="owl"><img src="assets/gallery/owl6.jpg" alt="Owl Image" /></a></div>
+                                <div class="item item-not-first"><a href="assets/gallery/owl7.jpg" data-lightbox="owl"><img src="assets/gallery/owl7.jpg" alt="Owl Image" /></a></div>
+                                <div class="item item-not-first"><a href="assets/gallery/owl8.jpg" data-lightbox="owl"><img src="assets/gallery/owl8.jpg" alt="Owl Image" /></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- prettyPhoto -->
+        <div class="row">
+            <ul class="portfolio-img">
+                <li class="span4"><a href="assets/gallery/slide1.jpg" rel="prettyPhoto" title="This is the description"><img src="assets/gallery/thumb/slide1.jpg" width="60" height="60" alt="This is the title"></a></li>
+                <li class="span4"><a href="assets/gallery/slide2.jpg" rel="prettyPhoto"><img src="assets/gallery/thumb/slide2.jpg"></a></li>
+                <li class="span4"><a href="assets/gallery/slide3.jpg" rel="prettyPhoto"><img src="assets/gallery/thumb/slide3.jpg"></a></li>
+            </ul>
+        </div>
         <!-- Portfolio -->
         <div class="portfolio portfolio-page container">
             <div class="row">
@@ -95,7 +188,7 @@
                 <ul class="portfolio-img">
                     <li data-id="p-1" data-type="web-design" class="span3">
                         <div class="work">
-                            <a href="assets/img/portfolio/work1.jpg" rel="prettyPhoto">
+                            <a href="assets/img/portfolio/work1.jpg" rel="prettyPhoto[portfolio]" title="Portfolio Image Items">
                                 <img src="assets/img/portfolio/work1.jpg" alt="">
                             </a>
                             <h4>Lorem Website</h4>
@@ -104,7 +197,7 @@
                     </li>
                     <li data-id="p-2" data-type="logo-design" class="span3">
                         <div class="work">
-                            <a href="assets/img/portfolio/work2.jpg" rel="prettyPhoto">
+                            <a href="assets/img/portfolio/work2.jpg"  rel="prettyPhoto[portfolio]" title="Portfolio Image Items">
                                 <img src="assets/img/portfolio/work2.jpg" alt="">
                             </a>
                             <h4>Ipsum Logo</h4>
@@ -113,7 +206,7 @@
                     </li>
                     <li data-id="p-3" data-type="print-design" class="span3">
                         <div class="work">
-                            <a href="assets/img/portfolio/work3.jpg" rel="prettyPhoto">
+                            <a href="assets/img/portfolio/work3.jpg"  rel="prettyPhoto[portfolio]" title="Portfolio Image Items">
                                 <img src="assets/img/portfolio/work3.jpg" alt="">
                             </a>
                             <h4>Dolor Prints</h4>
@@ -122,7 +215,7 @@
                     </li>
                     <li data-id="p-4" data-type="web-design" class="span3">
                         <div class="work">
-                            <a href="assets/img/portfolio/work4.jpg" rel="prettyPhoto">
+                            <a href="assets/img/portfolio/work4.jpg"  rel="prettyPhoto[portfolio]" title="Portfolio Image Items">
                                 <img src="assets/img/portfolio/work4.jpg" alt="">
                             </a>
                             <h4>Sit Amet Website</h4>
@@ -131,7 +224,7 @@
                     </li>
                     <li data-id="p-5" data-type="logo-design" class="span3">
                         <div class="work">
-                            <a href="assets/img/portfolio/work5.jpg" rel="prettyPhoto">
+                            <a href="assets/img/portfolio/work5.jpg"  rel="prettyPhoto[portfolio]" title="Portfolio Image Items">
                                 <img src="assets/img/portfolio/work5.jpg" alt="">
                             </a>
                             <h4>Consectetur Logo</h4>
@@ -140,7 +233,7 @@
                     </li>
                     <li data-id="p-6" data-type="print-design" class="span3">
                         <div class="work">
-                            <a href="assets/img/portfolio/work6.jpg" rel="prettyPhoto">
+                            <a href="assets/img/portfolio/work6.jpg"  rel="prettyPhoto[portfolio]" title="Portfolio Image Items">
                                 <img src="assets/img/portfolio/work6.jpg" alt="">
                             </a>
                             <h4>Adipisicing Print</h4>
@@ -149,7 +242,7 @@
                     </li>
                     <li data-id="p-7" data-type="web-design" class="span3">
                         <div class="work">
-                            <a href="assets/img/portfolio/work7.jpg" rel="prettyPhoto">
+                            <a href="assets/img/portfolio/work7.jpg"  rel="prettyPhoto[portfolio]" title="Portfolio Image Items">
                                 <img src="assets/img/portfolio/work7.jpg" alt="">
                             </a>
                             <h4>Elit Website</h4>
@@ -158,7 +251,7 @@
                     </li>
                     <li data-id="p-8" data-type="print-design" class="span3">
                         <div class="work">
-                            <a href="assets/img/portfolio/work8.jpg" rel="prettyPhoto">
+                            <a href="assets/img/portfolio/work8.jpg"  rel="prettyPhoto[portfolio]" title="Portfolio Image Items">
                                 <img src="assets/img/portfolio/work8.jpg" alt="">
                             </a>
                             <h4>Sed Do Prints</h4>
@@ -167,7 +260,7 @@
                     </li>
                     <li data-id="p-9" data-type="web-design" class="span3">
                         <div class="work">
-                            <a href="assets/img/portfolio/work9.jpg" rel="prettyPhoto">
+                            <a href="assets/img/portfolio/work9.jpg"  rel="prettyPhoto[portfolio]" title="Portfolio Image Items">
                                 <img src="assets/img/portfolio/work9.jpg" alt="">
                             </a>
                             <h4>Eiusmod Website</h4>
@@ -176,7 +269,7 @@
                     </li>
                     <li data-id="p-10" data-type="logo-design" class="span3">
                         <div class="work">
-                            <a href="assets/img/portfolio/work10.jpg" rel="prettyPhoto">
+                            <a href="assets/img/portfolio/work10.jpg"  rel="prettyPhoto[portfolio]" title="Portfolio Image Items">
                                 <img src="assets/img/portfolio/work10.jpg" alt="">
                             </a>
                             <h4>Tempor Logo</h4>
@@ -185,7 +278,7 @@
                     </li>
                     <li data-id="p-11" data-type="web-design" class="span3">
                         <div class="work">
-                            <a href="assets/img/portfolio/work11.jpg" rel="prettyPhoto">
+                            <a href="assets/img/portfolio/work11.jpg"  rel="prettyPhoto[portfolio]" title="Portfolio Image Items">
                                 <img src="assets/img/portfolio/work11.jpg" alt="">
                             </a>
                             <h4>Incididunt Website</h4>
@@ -194,7 +287,7 @@
                     </li>
                     <li data-id="p-12" data-type="print-design" class="span3">
                         <div class="work">
-                            <a href="assets/img/portfolio/work12.jpg" rel="prettyPhoto">
+                            <a href="assets/img/portfolio/work12.jpg"  rel="prettyPhoto[portfolio]" title="Portfolio Image Items">
                                 <img src="assets/img/portfolio/work12.jpg" alt="">
                             </a>
                             <h4>Ut Labore Print</h4>
@@ -246,6 +339,7 @@
         </footer>
 
         <!-- Javascript -->
+
         <script src="assets/js/jquery-1.8.2.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.flexslider.js"></script>
@@ -256,7 +350,47 @@
         <script src="assets/js/jquery.quicksand.js"></script>
         <script src="assets/prettyPhoto/js/jquery.prettyPhoto.js"></script>
         <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/jquery-1.11.0.min.js"></script>
+        <script src="assets/js/lightbox.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="assets/owl-carousel/owl.carousel.js"></script>
+        <script src="assets/js/jquery-1.9.1.min.js"></script>
+        <script src="assets/js/jquery.js"></script>
 
+        <script>
+            $(document).ready(function(){
+                $("#owl-demo").owlCarousel({
+                    autoPlay : 3000,
+                    items : 4,
+                    itemsDesktop : [1199,3],
+                    itemsDesktopSmall : [979,3],
+                    navigation : true,
+                    pagination : true
+                });
+                $(".play").click(function(){
+                    owl.trigger('owl.play',5000);
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("a[rel^='prettyPhoto']").prettyPhoto({
+                    animation_speed: fast,
+                    slideshow: 5000,
+                    autoplay_slideshow: true,
+                    opacity: 0.8,
+                    show_title: true,
+                    allow_resize: true,
+                    default_width: 800,
+                    default_height: 560,
+                    theme: pp_default,
+                    horizontal_padding: 20,
+                    modal: true,
+                    overlay_gallery: true,
+                    keyboard_shortcuts: true,
+                });
+            });
+        </script>
     </body>
 
 </html>
