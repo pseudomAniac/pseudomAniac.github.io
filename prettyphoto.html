@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="assets/prettyPhoto/css/prettyPhoto.css" />
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/fancyBox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<link rel="stylesheet" href="assets/fancyBox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" />
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" />
 	<style rel="text/css">
 
 	</style>
@@ -11,14 +12,11 @@
 	<div class="row">
 		<div class="span12">
 			<div class="prettyPhoto">
-				<div class="item"><a href="assets/gallery/slide1.jpg" rel="prettyPhoto"><img src="assets/gallery/thumb/slide1.jpg" ></a></div>
-		        <div class="item"><a href="assets/gallery/slide2.jpg" rel="prettyPhoto"><img src="assets/gallery/thumb/slide2.jpg" ></a></div>
-		        <div class="item"><a href="assets/gallery/slide3.jpg" rel="prettyPhoto"><img src="assets/gallery/thumb/slide3.jpg" ></a></div>
-		        <div class="item"><a href="assets/gallery/owl4.jpg" rel="prettyPhoto[owls]"><img src="assets/gallery/owl4.jpg" ></a></div>
-		        <div class="item"><a href="assets/gallery/owl5.jpg" rel="prettyPhoto[owls]"><img src="assets/gallery/owl5.jpg" ></a></div>
-		        <div class="item"><a href="assets/gallery/owl6.jpg" rel="prettyPhoto[owls]"><img src="assets/gallery/owl6.jpg" ></a></div>
-		        <div class="item"><a href="assets/gallery/owl7.jpg" rel="prettyPhoto[owls]"><img src="assets/gallery/owl7.jpg" ></a></div>
-		        <div class="item"><a href="assets/gallery/owl8.jpg" rel="prettyPhoto[owls]"><img src="assets/gallery/owl8.jpg" ></a></div>
+				<div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_001.jpg" data-fancybox-group="gallery" title="this is the first pic of five pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-001.jpg" ></a></div>
+		        <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_002.jpg" data-fancybox-group="gallery" title="this is the second pic of five pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-002.jpg" ></a></div>
+		        <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_003.jpg" data-fancybox-group="gallery" title="this is the third pic of five pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-003.jpg" ></a></div>
+		        <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_004.jpg" data-fancybox-group="gallery" title="this is the fourth pic of five pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-004.jpg" ></a></div>
+		        <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_005.jpg" data-fancybox-group="gallery" title="this is the fifth pic of five pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-005.jpg" ></a></div>
 			</div>
 		</div>
 	</div>
@@ -27,24 +25,21 @@
 	</footer>
 
 <!-- Javascript -->
-<script src="assets/js/jquery-1.9.1.min.js"></script>
-<script src="assets/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+<script src="assets/fancyBox/lib/jquery-1.10.1.min.js"></script>
+<script src="assets/fancyBox/source/jquery.fancybox.pack.js"></script>
+<script src="assets/fancyBox/source/jquery.fancybox.js?v=2.1.5"></script>
+<script src="assets/fancyBox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="assets/fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
 
 <script>
 	$(document).ready(function(){
-		$("a[rel^='prettyPhoto']").prettyPhoto({
-			animation_speed : 'fast',
-			slideshow : 5000,
-			autoplay_slideshow : true,
-			opacity : 0.8,
-			show_title : true,
-			allow_resize : true,
-			default_width : 500,
-			default_height : 340,
-			counter_seperator_label : '/',
-			theme : 'pp_default',
-			horizontal_padding : 20,
-			autoplay : true
+		$(".fancybox").fancybox({
+			'transitionIn'	:	'swing',
+			'transitionOut'	:	'elastic',
+			'speedIn'		:	600, 
+			'speedOut'		:	200, 
+			'overlayColor'  :   '#cdcdc0'
 		});
 	});
 </script>

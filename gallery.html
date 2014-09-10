@@ -5,7 +5,7 @@
     <head>
 
         <meta charset="utf-8">
-        <title>Andia - Responsive Agency Template</title>
+        <title>Gallery | T-Rocks Construction</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -20,12 +20,10 @@
         <link rel="stylesheet" href="assets/css/font-awesome.css">
         <link rel="stylesheet" href="assets/css/style.css">
 
-        <!-- owl carousel -->
-        <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css" /ß>
-        <link rel="stylesheet" href="assets/owl-carousel/owl.theme.css" />
-
-        <!-- lightbox -->
-        <link href="assets/css/lightbox.css" rel="stylesheet" />
+        <!--fancybox -->
+        <link rel="stylesheet" href="assets/fancyBox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <link rel="stylesheet" href="assets/fancyBox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" />
+    
 
         <style>
             .owl-carousel .owl-wrapper-outer {
@@ -119,74 +117,32 @@
         <!-- Gallery -->
         <div class="row">
             <div class="span12">
-                <div>
-                    <h1>Featured Gallery</h1>
-                    <p>This is a sample gallery of owl pictures. In time it will will contain pictures that are featured as top of the month or top of the gallery, etc. It can hold up to 12-16 pictures at one time.</p>
+                <div class="description">
+                    <h1>Gallery Title<small>sample gallery description</small></h1>
+                    <p>some more description about the gallery</p>
                 </div>
-                <div id="owl-demo" class="owl-carousel">
-                    <div class="item"><a href="assets/gallery/owl1.jpg" data-lightbox="owl1" data-title="Owl1 Gallery"><img src="assets/gallery/owl1.jpg" alt="Owl Image Gallery Picture 01"></a></div>
-                    <div class="item"><a href="assets/gallery/owl2.jpg" data-lightbox="owl2" data-title="Owl2 Gallery"><img src="assets/gallery/owl2.jpg" alt="Owl Image"></a></div>
-                    <div class="item"><a href="assets/gallery/owl3.jpg" data-lightbox="owl3" data-title="Owl3 Gallery"><img src="assets/gallery/owl3.jpg" alt="Owl Image"></a></div>
-                    <div class="item"><a href="assets/gallery/owl4.jpg" data-lightbox="owl1" data-title="Owl1 Gallery"><img src="assets/gallery/owl4.jpg" alt="Owl Image"></a></div>
-                    <div class="item"><a href="assets/gallery/owl5.jpg" data-lightbox="owl2" data-title="Owl2 Gallery"><img src="assets/gallery/owl5.jpg" alt="Owl Image"></a></div>
-                    <div class="item"><a href="assets/gallery/owl6.jpg" data-lightbox="owl3" data-title="Owl3 Gallery"><img src="assets/gallery/owl6.jpg" alt="Owl Image"></a></div>
-                    <div class="item"><a href="assets/gallery/owl7.jpg" data-lightbox="owl1" data-title="Owl1 Gallery"><img src="assets/gallery/owl7.jpg" alt="Owl Image"></a></div>
-                    <div class="item"><a href="assets/gallery/owl8.jpg" data-lightbox="owl2" data-title="Owl2 Gallery"><img src="assets/gallery/owl8.jpg" alt="Owl Image"></a></div>
+                <div class="prettyPhoto">
+                    <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_001.jpg" data-fancybox-group="men at work" title="this is the first pic of 15 pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-001.jpg" ></a></div>
+                    <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_002.jpg" data-fancybox-group="men at work" title="this is the second pic of 15 pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-002.jpg" ></a></div>
+                    <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_003.jpg" data-fancybox-group="men at work" title="this is the third pic of 15 pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-003.jpg" ></a></div>
+                    <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_004.jpg" data-fancybox-group="men at work" title="this is the fourth pic of 15 pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-004.jpg" ></a></div>
+                    <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_005.jpg" data-fancybox-group="gallery" title="this is the fifth pic of 15 pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-005.jpg" ></a></div>
+                    <!-- first gallery ends and second gallery begins -->
+                    <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_006.jpg" data-fancybox-group="men at work" title="this is the 6 pic of 15 pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-006.jpg" ></a></div>
+                    <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_007.jpg" data-fancybox-group="gallery" title="this is the 7 pic of 15 pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-007.jpg" ></a></div>
+                    <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_008.jpg" data-fancybox-group="gallery" title="this is the 8 pic of 15 pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-008.jpg" ></a></div>
+                    <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_009.jpg" data-fancybox-group="gallery" title="this is the 9 pic of 15 pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-009.jpg" ></a></div>
+                    <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_010.jpg" data-fancybox-group="gallery" title="this is the 10 pic of 15 pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-010.jpg" ></a></div>
+                    <!-- second gallery ends and third gallery begins -->
+                    <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_011.jpg" data-fancybox-group="gallery" title="this is the 11 pic of 15 pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-011.jpg" ></a></div>
+                    <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_012.jpg" data-fancybox-group="gallery" title="this is the 12 pic of 15 pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-012.jpg" ></a></div>
+                    <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_003.jpg" data-fancybox-group="men at work" title="this is the 13 pic of 15 pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-003.jpg" ></a></div>
+                    <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_004.jpg" data-fancybox-group="men at work" title="this is the 14 pic of 15 pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-004.jpg" ></a></div>
+                    <div class="item"><a class="fancybox" href="assets/gallery/trocks_slider_005.jpg" data-fancybox-group="men at work" title="this is the 15 pic of 15 pixs" rel="group"><img src="assets/gallery/thumb/t-rocks-thumb-005.jpg" ></a></div>
+                    <!-- third gallery ends and ends the galleries -->
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="span4">
-                <div id="owl-example" >
-                    <div class="carousel-wrapper">
-                        <div class="item" style="z-index:1000;"><a href="assets/gallery/owl1.jpg" data-lightbox="owl"><img src="assets/gallery/owl1.jpg" alt="Owl Image" /></a></div>
-                        <div class="item"><a href="assets/gallery/owl2.jpg" data-lightbox="owl"><img src="assets/gallery/owl2.jpg" alt="Owl Image" /></a></div>
-                        <div class="item"><a href="assets/gallery/owl3.jpg" data-lightbox="owl"><img src="assets/gallery/owl3.jpg" alt="Owl Image" /></a></div>
-                        <div class="item"><a href="assets/gallery/owl4.jpg" data-lightbox="owl"><img src="assets/gallery/owl4.jpg" alt="Owl Image" /></a></div>
-                        <div class="item"><a href="assets/gallery/owl5.jpg" data-lightbox="owl"><img src="assets/gallery/owl5.jpg" alt="Owl Image" /></a></div>
-                        <div class="item"><a href="assets/gallery/owl6.jpg" data-lightbox="owl"><img src="assets/gallery/owl6.jpg" alt="Owl Image" /></a></div>
-                        <div class="item"><a href="assets/gallery/owl7.jpg" data-lightbox="owl"><img src="assets/gallery/owl7.jpg" alt="Owl Image" /></a></div>
-                        <div class="item"><a href="assets/gallery/owl8.jpg" data-lightbox="owl"><img src="assets/gallery/owl8.jpg" alt="Owl Image" /></a></div>
-                    </div>
-                    <div class="navbar wrapper-bullet">
-                        <ul class="nav pull-left">
-                            <li>alpha</li>
-                            <li>bravo</li>
-                            <li>charlie</li>
-                            <li>delta</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="span4">
-                <div id="owl-example" >
-                    <div class="carousel-wrapper">
-                        <div class="item first-item"><a href="assets/gallery/owl1.jpg" data-lightbox="owl"><img src="assets/gallery/owl1.jpg" alt="Owl Image" /></a></div>
-                        <div class="item item-not-first"><a href="assets/gallery/owl2.jpg" data-lightbox="owl"><img src="assets/gallery/owl2.jpg" alt="Owl Image" /></a></div>
-                        <div class="item item-not-first"><a href="assets/gallery/owl3.jpg" data-lightbox="owl"><img src="assets/gallery/owl3.jpg" alt="Owl Image" /></a></div>
-                        <div class="item item-not-first"><a href="assets/gallery/owl4.jpg" data-lightbox="owl"><img src="assets/gallery/owl4.jpg" alt="Owl Image" /></a></div>
-                        <div class="item item-not-first"><a href="assets/gallery/owl5.jpg" data-lightbox="owl"><img src="assets/gallery/owl5.jpg" alt="Owl Image" /></a></div>
-                        <div class="item item-not-first"><a href="assets/gallery/owl6.jpg" data-lightbox="owl"><img src="assets/gallery/owl6.jpg" alt="Owl Image" /></a></div>
-                        <div class="item item-not-first"><a href="assets/gallery/owl7.jpg" data-lightbox="owl"><img src="assets/gallery/owl7.jpg" alt="Owl Image" /></a></div>
-                        <div class="item item-not-first"><a href="assets/gallery/owl8.jpg" data-lightbox="owl"><img src="assets/gallery/owl8.jpg" alt="Owl Image" /></a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="span4">
-                <div id="owl-example" >
-                    <div class="carousel-wrapper">
-                        <div class="item first-item"><a href="assets/gallery/owl1.jpg" data-lightbox="owl"><img src="assets/gallery/owl1.jpg" alt="Owl Image" /></a></div>
-                        <div class="item item-not-first"><a href="assets/gallery/owl2.jpg" data-lightbox="owl"><img src="assets/gallery/owl2.jpg" alt="Owl Image" /></a></div>
-                        <div class="item item-not-first"><a href="assets/gallery/owl3.jpg" data-lightbox="owl"><img src="assets/gallery/owl3.jpg" alt="Owl Image" /></a></div>
-                        <div class="item item-not-first"><a href="assets/gallery/owl4.jpg" data-lightbox="owl"><img src="assets/gallery/owl4.jpg" alt="Owl Image" /></a></div>
-                        <div class="item item-not-first"><a href="assets/gallery/owl5.jpg" data-lightbox="owl"><img src="assets/gallery/owl5.jpg" alt="Owl Image" /></a></div>
-                        <div class="item item-not-first"><a href="assets/gallery/owl6.jpg" data-lightbox="owl"><img src="assets/gallery/owl6.jpg" alt="Owl Image" /></a></div>
-                        <div class="item item-not-first"><a href="assets/gallery/owl7.jpg" data-lightbox="owl"><img src="assets/gallery/owl7.jpg" alt="Owl Image" /></a></div>
-                        <div class="item item-not-first"><a href="assets/gallery/owl8.jpg" data-lightbox="owl"><img src="assets/gallery/owl8.jpg" alt="Owl Image" /></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>    
         <!-- Footer -->
         <footer>
             <div class="container">
@@ -227,11 +183,9 @@
             </div>
         </footer>
         <!-- Javascript -->
-                <!-- lightbox gallery js files -->
         <script src="assets/js/jquery-1.11.0.min.js"></script>
-        <script src="assets/js/lightbox.min.js"></script>
 
-<!--        <script src="assets/js/jquery-1.8.2.min.js"></script> -->
+<!--    <script src="assets/js/jquery-1.8.2.min.js"></script> -->
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.flexslider.js"></script>
         <script src="assets/js/jquery.tweet.js"></script>
@@ -243,22 +197,22 @@
         <script src="assets/js/scripts.js"></script>
         <!-- owl carousel js files/scripts -->
         <script src="assets/js/jquery-1.9.1.min.js"></script>
-        <script src="assets/owl-carousel/owl.carousel.js"></script>\
+        <script src="assets/owl-carousel/owl.carousel.js"></script>
+        <!-- fancybox js files/scripts -->
+        <script src="assets/fancyBox/lib/jquery-1.10.1.min.js"></script>
+        <script src="assets/fancyBox/source/jquery.fancybox.pack.js"></script>
+        <script src="assets/fancyBox/source/jquery.fancybox.js?v=2.1.5"></script>
+        <script src="assets/fancyBox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+        <script src="assets/fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
         <script>
             $(document).ready(function(){
-                $("#owl-demo").owlCarousel({
-                    autoPlay : 5000,
-                    items : 3,
-                    navigation : true,
-                    pagination : false,
-                    lazyLoad : true,
-                    responsive : false
-                });
-                $(".play").click(function(){
-                    owl.trigger('owl.play',5000);
-                });
-                $(".stop").click(function(){
-                    owl.trigger('owl.stop');
+                $(".fancybox").fancybox({
+                    'transitionIn'  :   'swing',
+                    'transitionOut' :   'elastic',
+                    'speedIn'       :   600, 
+                    'speedOut'      :   200, 
+                    'overlayColor'  :   '#cdcdc0'
                 });
             });
         </script>

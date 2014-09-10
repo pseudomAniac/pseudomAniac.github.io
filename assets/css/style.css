@@ -1092,6 +1092,12 @@ ul.portfolio-img li {
 .filter-portfolio a#active-imgs:hover { color: #5d5d5d; }
 
 
+/* ----- Gallery ----- */
+.fancybox > img {
+    float: left;
+    margin: 10px 15px;
+    border: 2px white solid;
+}
 
 
 /* ----- Media queries ----- */

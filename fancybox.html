@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="assets/prettyPhoto/css/prettyPhoto.css" />
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+	<style rel="text/css">
+
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="span12">
+			<div class="prettyPhoto">
+				<div class="item"><a href="assets/gallery/slide1.jpg" rel="prettyPhoto"><img src="assets/gallery/thumb/slide1.jpg" ></a></div>
+		        <div class="item"><a href="assets/gallery/slide2.jpg" rel="prettyPhoto"><img src="assets/gallery/thumb/slide2.jpg" ></a></div>
+		        <div class="item"><a href="assets/gallery/slide3.jpg" rel="prettyPhoto"><img src="assets/gallery/thumb/slide3.jpg" ></a></div>
+		        <div class="item"><a href="assets/gallery/owl4.jpg" rel="prettyPhoto[owls]"><img src="assets/gallery/owl4.jpg" ></a></div>
+		        <div class="item"><a href="assets/gallery/owl5.jpg" rel="prettyPhoto[owls]"><img src="assets/gallery/owl5.jpg" ></a></div>
+		        <div class="item"><a href="assets/gallery/owl6.jpg" rel="prettyPhoto[owls]"><img src="assets/gallery/owl6.jpg" ></a></div>
+		        <div class="item"><a href="assets/gallery/owl7.jpg" rel="prettyPhoto[owls]"><img src="assets/gallery/owl7.jpg" ></a></div>
+		        <div class="item"><a href="assets/gallery/owl8.jpg" rel="prettyPhoto[owls]"><img src="assets/gallery/owl8.jpg" ></a></div>
+			</div>
+		</div>
+	</div>
+	<footer class="row">
+		<div class="span12"><h1>this is the footer</h1></div>
+	</footer>
+
+<!-- Javascript -->
+<script src="assets/js/jquery-1.9.1.min.js"></script>
+<script src="assets/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$("a[rel^='prettyPhoto']").prettyPhoto({
+			animation_speed : 'fast',
+			slideshow : 5000,
+			autoplay_slideshow : true,
+			opacity : 0.8,
+			show_title : true,
+			allow_resize : true,
+			default_width : 500,
+			default_height : 340,
+			counter_seperator_label : '/',
+			theme : 'pp_default',
+			horizontal_padding : 20,
+			autoplay : true
+		});
+	});
+</script>
+</body>
+</html>
